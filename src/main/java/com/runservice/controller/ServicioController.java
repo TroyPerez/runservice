@@ -68,10 +68,11 @@ public class ServicioController {
             servicio.setNombreEjecutable((String)data[2]);            
             this.serviciodao.actualizarServicio(servicio);
         }
-        
-        
-        
-        
+    }
+    
+    
+    public void eliminarServicio(int id){
+        this.serviciodao.eliminarServicio(id);
     }
     
 }

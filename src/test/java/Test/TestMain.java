@@ -7,6 +7,8 @@ package Test;
 
 import com.runservice.controller.ServicioController;
 import com.runservice.objects.SQLiteConnection;
+import com.runservice.views.AgregarActualizarServiciosView;
+import com.runservice.views.ListaServiciosView;
 import java.nio.file.Path;
 import java.nio.file.FileSystems;
 import java.sql.ResultSet;
@@ -15,6 +17,7 @@ import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.LinkedHashMap;
+import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -30,7 +33,8 @@ public class TestMain {
     public static void main(String[] args) {
         // TODO code application logic here
         //testConnection();
-        testObtenerServicios();
+        //testObtenerServicios();
+        
     }
     
     public static void testConnection(){

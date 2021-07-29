@@ -151,7 +151,7 @@ public class AgregarActualizarServiciosView extends javax.swing.JDialog {
         }
         
         this.servicioControler.agregarActualizarServicio(data, this.agregar);
-        
+        this.dispose();
     }//GEN-LAST:event_btnAgregarActualizarActionPerformed
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

@@ -86,7 +86,13 @@ public class ServicioDAO {
         }
     }
     
-    public void eliminarServicio(Servicio servicio){
-        
+    public void eliminarServicio(int id){
+        try {
+            this.pstm = this.sqlitecon.getCon().prepareStatement("delete from servicios where id_servicio=?");            
+            this.pstm.setInt(1, id);
+            this.pstm.execute();            
+        } catch (SQLException ex) {
+            Logger.getLogger(ServicioDAO.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }
 }
